@@ -1,0 +1,33 @@
+@startuml
+|transmitting|
+start
+: transmit can messages;
+:ask for bms data\n containing voltage, current, temperature;
+
+|#gold|translating|
+: receive can messages and translate them;
+
+|#Pink|bms memory|
+: get bms data;
+
+|#gold|translating|
+:Calculate based on the value of BMS;
+
+|#AntiqueWhite|CC memory|
+: get CC data to control the charger;
+
+|transmitting|
+:ask for CC data\n containing maxvoltage, maxcurrent, state;
+
+|#gold|translating|
+: receive can messages and translate them;
+
+
+|#AntiqueWhite|CC memory|
+:get CC data to get the data from charger;
+
+|transmitting|
+: transmit messages to control the charger;
+
+stop
+@enduml

@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: zhang tingyulikeyou@outlook.com, None, LIC=ATTQ1-CKKF8-74HS0-B45H1-JMC3K-AW9BW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  D:\app_for_work\arm_keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\git_workstation\GD32F10x_translater\Template\Keil5_project\Project.uvprojx
+Project File Date:  08/01/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\app_for_work\arm_keil\ARM\ARMCC\Bin'
+Rebuild target 'GD32F10X_HD'
+compiling fsm.c...
+..\..\user\Src\fsm.c(186): warning:  #68-D: integer conversion resulted in a change of sign
+          if (history_ptr->stateID == FSM_NULL_STATE_ID) {
+..\..\user\Src\fsm.c(479): warning:  #68-D: integer conversion resulted in a change of sign
+          if (state_description_table[i].state_id != FSM_NULL_STATE_ID)  { 
+..\..\user\Src\fsm.c(521): warning:  #68-D: integer conversion resulted in a change of sign
+          if (event_description_table[i].event_id == FSM_NULL_EVENT_ID)  {
+..\..\user\Src\fsm.c(590): warning:  #68-D: integer conversion resulted in a change of sign
+          temp_fsm->history[i].prevStateID = FSM_NULL_STATE_ID;
+..\..\user\Src\fsm.c(591): warning:  #68-D: integer conversion resulted in a change of sign
+          temp_fsm->history[i].stateID = FSM_NULL_STATE_ID;
+..\..\user\Src\fsm.c(592): warning:  #68-D: integer conversion resulted in a change of sign
+          temp_fsm->history[i].eventID = FSM_NULL_EVENT_ID;
+..\..\user\Src\fsm.c: 6 warnings, 0 errors
+compiling systick.c...
+compiling can_obj.c...
+compiling CRC16.c...
+compiling gd32f10x_it.c...
+..\gd32f10x_it.c(187): warning:  #1-D: last line of file ends without a newline
+  }
+..\gd32f10x_it.c: 1 warning, 0 errors
+compiling main.c...
+..\main.c(75): warning:  #128-D: loop is not reachable
+      while(1)
+..\main.c: 1 warning, 0 errors
+compiling demo_session_fsm.c...
+..\..\user\Src\demo_session_fsm.c(56): warning:  #68-D: integer conversion resulted in a change of sign
+     {FSM_NULL_EVENT_ID, NULL} };
+..\..\user\Src\demo_session_fsm.c(68): warning:  #68-D: integer conversion resulted in a change of sign
+     {FSM_NULL_STATE_ID, NULL} };
+..\..\user\Src\demo_session_fsm.c(142): warning:  #68-D: integer conversion resulted in a change of sign
+        {FSM_NULL_STATE_ID, NULL} };  
+..\..\user\Src\demo_session_fsm.c(154): warning:  #68-D: integer conversion resulted in a change of sign
+      state = (-1);
+..\..\user\Src\demo_session_fsm.c: 4 warnings, 0 errors
+compiling translater.c...
+..\..\user\Src\translater.c(389): warning:  #177-D: variable "bms"  was declared but never referenced
+      CanBms* bms = (CanBms*)device;
+..\..\user\Src\translater.c(423): warning:  #186-D: pointless comparison of unsigned integer with zero
+      if(bms->rsoc < 10u&&bms->rsoc >= 0u)
+..\..\user\Src\translater.c: 2 warnings, 0 errors
+compiling demo_event_handlers.c...
+..\..\user\Src\demo_event_handlers.c(45): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(46): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c(61): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(62): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c(77): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(78): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c(92): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(93): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c(108): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(109): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c(123): warning:  #550-D: variable "p2config"  was set but never used
+      demo_config_t *p2config;
+..\..\user\Src\demo_event_handlers.c(124): warning:  #550-D: variable "p2context"  was set but never used
+      demo_context_t *p2context;
+..\..\user\Src\demo_event_handlers.c: 12 warnings, 0 errors
+compiling system_gd32f10x.c...
+compiling demo.c...
+compiling runtime_environment.c...
+compiling Timer.c...
+compiling gd32f10x_adc.c...
+compiling gd32f10x_bkp.c...
+compiling gd32f10x_can.c...
+compiling gd32f10x_exti.c...
+compiling gd32f10x_dbg.c...
+compiling gd32f10x_dac.c...
+compiling gd32f10x_crc.c...
+compiling gd32f10x_fmc.c...
+compiling gd32f10x_enet.c...
+compiling gd32f10x_dma.c...
+compiling gd32f10x_exmc.c...
+compiling gd32f10x_fwdgt.c...
+compiling gd32f10x_i2c.c...
+compiling gd32f10x_pmu.c...
+compiling gd32f10x_misc.c...
+compiling gd32f10x_rtc.c...
+compiling gd32f10x_gpio.c...
+compiling gd32f10x_rcu.c...
+compiling gd32f10x_sdio.c...
+assembling startup_gd32f10x_hd.s...
+compiling gd32f10x_spi.c...
+compiling gd32f10x_wwdgt.c...
+compiling gd32f10x_eval.c...
+compiling gd32f10x_usart.c...
+compiling gd32f10x_timer.c...
+linking...
+Program Size: Code=13870 RO-data=1034 RW-data=1772 ZI-data=4396  
+".\output\Project.axf" - 0 Error(s), 26 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F10x_DFP.2.0.3.pack
+                GigaDevice.GD32F10x_DFP.2.0.3
+                GigaDevice GD32F10x Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\pack\GigaDevice\GD32F10x_DFP\2.0.3\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.json": "c",
+        "main.h": "c",
+        "translater.h": "c",
+        "stdlib.h": "c",
+        "stdarg.h": "c",
+        "gd32f10x_it.h": "c",
+        "gd32f10x.h": "c",
+        "stdint.h": "c",
+        "crc16.h": "c",
+        "systick.h": "c",
+        "stddef.h": "c",
+        "demo.h": "c",
+        "demo_session_fsm.h": "c"
+    }
+}

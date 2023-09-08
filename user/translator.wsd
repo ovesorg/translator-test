@@ -1,0 +1,27 @@
+@startuml
+
+
+
+scale 500 width
+[*] --> ready : Init
+
+ready --> sleeping : Sleep
+ready --> transmitting : systick(1s)
+ready --> [*] :watchdog(2s)
+ready : Everything is ok.
+
+
+sleeping --> ready : WakeUp
+sleeping : Reduce power consumption by disabling some clocks, \nand only receive messages at this time
+
+transmitting --> ready : transmit done
+transmitting --> [*] :watchdog(2s)
+transmitting : Only sends all messages in this state.
+
+translating --> transmitting : CRC Success
+translating --> ready : CRC Failed
+
+translating  : Translation work here
+
+
+@enduml
